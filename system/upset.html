@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>基本设置</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="body">
+        <div class="main-box">
+            <div class="page-nav">
+                <h1>上传配置</h1>
+                <div class="page-location">
+                    <span class="icon icon-home">&nbsp;</span>当前位置：系统设置 > <a href="#">基本设置</a><span class="icon icon-refresh mar-l" ></span>
+                </div>
+            </div>
+
+            <div class="wrapper-inner">
+                <form class="bor-lf">
+                    <div class="group-title">
+                        文件配置
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">服务器信息：</label>
+                        <div class="col-m-16 mar-l-m">
+                            上传最大值 &nbsp; <span class="red">20M</span> , &nbsp; POST最大值 &nbsp; <span class="red">20M</span>.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">允许上传大小：</label>
+                        <div class="col-m-16 mar-l-m">
+                            <input type="text" id="upfile_size" class="inp-wid-xs" placeholder="" > &nbsp; kb 
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">允许上传文件类型：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <input type="text" id="upfile_type" placeholder="" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">允许上传图片类型：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <input type="text" id="upfile_type" placeholder="" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">图片上传目录：</label>
+                        <div class="col-m-12 mar-l-m">
+                            /upload/ &nbsp; 
+                            <input type="text" id="upimg_path" value="image" class="inp-wid-s" disabled="disabled" >
+                            <span class="tag active mar-l" id="btn_upimg_path">
+                                更改路径
+                                <div class="mask"></div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">文件上传目录：</label>
+                        <div class="col-m-12 mar-l-m">
+                            /upload/ &nbsp; 
+                            <input type="text" id="upfile_path" value="file" class="inp-wid-s" >
+                            <span class="tag active mar-l">
+                                更改路径
+                                <div class="mask"></div>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="group-title">
+                        图片配置
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">允许图片上传大小：</label>
+                        <div class="col-m-16 mar-l-m">
+                            <input type="text" id="upimg_size" class="inp-wid-xs" placeholder="" > &nbsp; kb 
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">图片存放类型：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <div class="select" id="upimg_path_type">
+                                <p>按年/月/日/</p>
+                                <ul>
+                                    <li data-value="y/m/d" class="selected">按年/月/日/</li>
+                                    <li data-value="ym/d">按年月/日/</li>
+                                    <li data-value="ymd">按年月日/</li>
+                                </ul>
+                                <input type="hidden" name="upimg_path_type" value="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">是否启用图片水印：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <label class="radio-inline">
+                                <input type="radio" name="watermark_is_open" id="watermark_is_open_1"  value="1" checked="checked" />
+                                <label for="watermark_is_open_1"></label> 开启
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="watermark_is_open" id="watermark_is_open_2"  value="0" />
+                                <label for="watermark_is_open_2"></label> 关闭
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">水印尺寸 &nbsp 宽：</label>
+                        <div class="col-m-2 mar-l-m">
+                            <input type="text" id="watermark_width" class="inp-wid-xs" />
+                        </div>
+                        <label for="webname" class="col-m-1">高：</label>
+                        <div class="col-m-2 mar-l-m">
+                            <input type="text" id="watermark_height" class="inp-wid-xs" /> px
+                        </div>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">水印图片：</label>
+                        <div class="col-m-12 mar-l-m">
+                            /static/images/ &nbsp;
+                            <input type="text" id="watermark_img_path" class="inp-wid-s" value="watermark.png" >
+                            <span class="tag active mar-l">
+                                上传图片
+                            </span>
+                        </div>
+                    </div> 
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">水印位置：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <div class="select" id="watermark_img_position">
+                                <p>右下</p>
+                                <ul class="grid">
+                                    <li data-value="1">左上</li>
+                                    <li data-value="2">中上</li>
+                                    <li data-value="3">右上</li>
+                                    <li data-value="4">左中</li>
+                                    <li data-value="5">中心</li>
+                                    <li data-value="6">右中</li>
+                                    <li data-value="7">左下</li>
+                                    <li data-value="8">中下</li>
+                                    <li data-value="9" class="selected">右下</li>
+                                </ul>
+                                <input type="hidden" name="watermark_img_position" value="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">是否启用缩略图：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <label class="radio-inline">
+                                <input type="radio" name="thumIsOpen" id="thumIsOpen_1"  value="1" checked="checked" />
+                                <label for="thumIsOpen_1"></label> 开启
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="thumIsOpen"  id="thumIsOpen_2"  value="0" />
+                                <label for="thumIsOpen_2"></label> 关闭
+                            </label>
+                        </div>
+                    </div>  
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">缩略图尺寸 &nbsp; 宽：</label>
+                        <div class="col-m-2 mar-l-m">
+                            <input type="text" id="thum_width" class="inp-wid-xs" />
+                        </div>
+                        <label for="webname" class="col-m-1">高：</label>
+                        <div class="col-m-2 mar-l-m">
+                            <input type="text" id="thum_height" class="inp-wid-xs" /> px
+                        </div>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">是否存储远程图片：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <label class="radio-inline">
+                                <input type="radio" name="isSaveWebImg" id="isSaveWebImg_1"  value="1" checked="checked" />
+                                <label for="isSaveWebImg_1"></label> 开启
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="isSaveWebImg" id="isSaveWebImg_2"  value="0" />
+                                <label for="isSaveWebImg_2"></label> 关闭
+                            </label>
+                        </div>
+                    </div> 
+                                    
+                    <div class="form-group">
+                        <div class="col-m-offset-3" >
+                        <button class="button-default">提 交</button>
+                        </div>
+                    </div>                                      
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/vue.js"></script>
+    <script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#watermark_img_position, #upimg_path_type').children('p').on('click',function(e){
+				$(this).parent().toggleClass('open');
+				e.stopPropagation();
+			});
+            $('#watermark_img_position ul li, #upimg_path_type ul li').on('click', function(e){
+				var _this_ = $(this);
+                var _parent_ = $(this).parent().parent();
+				_parent_.children("p").text(_this_.text());
+                _parent_.children("input[type='hidden']").val(_this_.data('value'));
+				_this_.addClass('selected').siblings().removeClass('selected');
+				_parent_.removeClass('open');
+				e.stopPropagation();
+			});
+			
+			$(document).on('click', function(){
+				$('.select').removeClass('open');
+			});
+
+            $("#btn_upimg_path").on('click', function(){
+                $('.shade-box,.message-box').addClass('show');
+                $('body').css('overflow', 'hidden');
+            });
+		});
+    </script>
+    
+    <div class="shade-box">
+    </div>
+    <div class="message-box">
+        <div class="header wid-100">
+            <div class="message-title col-m-18 text-left ">弹出窗口</div>
+            <div class="message-button col-m-2">
+                <span class="icon icon-close"></span>
+            </div>
+        </div>
+        <div class="page-box">
+                <form class="bor-lf">
+                    <div class="form-group">
+                        <label for="webname" class="col-m-4">网站名称：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <input type="text" id="web_name" placeholder="用户名" class="inp-wid-s" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-4">网站URL：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <input type="text" id="web_url" placeholder="网址" class="inp-wid-s" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-4">网站：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <input type="text" id="web_path" placeholder="网址基本路径" class="inp-wid-s" />
+                            <span class="tag"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-m-offset-4 mar-l-m">
+                            <button class="button-default">提交</button>
+                        </div>
+                    </div>
+                </form>
+        </div>
+    </div> 
+</body>
+</html>

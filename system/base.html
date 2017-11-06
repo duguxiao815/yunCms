@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>基本设置</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="body">
+        <div class="main-box">
+            <div class="page-nav">
+                <h1>基本设置</h1>
+                <div class="page-location">
+                    <span class="icon icon-home">&nbsp;</span>当前位置：系统设置 > <a href="#">基本设置</a><span class="icon icon-refresh mar-l" ></span>
+                </div>
+            </div>
+
+            <div class="wrapper-inner">
+                <form class="bor-lf">
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">网站名称：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <input type="text" id="web_name" placeholder="用户名" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">页面执行超时时间：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <input type="text" id="page_time_limit" placeholder="网址" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">Session过期时间：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <input type="text" id="session_deadline" placeholder="默认1小时" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">开启页面Gzip压缩：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <label class="radio-inline">
+                                <input type="radio" id="is_gzip_1" name="is_gzip" value="0" />
+                                <label for="is_gzip_1"></label> 开启
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" id="is_gzip_2" name="is_gzip" value="0" checked="checked" />
+                                <label for="is_gzip_2"></label> 关闭
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">JS路径：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <input type="text" id="web_logo" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">CSS路径：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <input type="text" id="master_phone" >
+                        </div>
+                    </div> 
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">图片路径：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <input type="text" id="master_email" >
+                        </div>
+                    </div>                   
+                    <div class="form-group">
+                        <div class="col-m-offset-3" >
+                        <button class="button-default">提 交</button>
+                        </div>
+                    </div>                                      
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/vue.js"></script>
+    <script>
+
+    </script>  
+</body>
+</html>

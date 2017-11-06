@@ -1,0 +1,148 @@
+/**********************************/
+/********************************/
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px/20px 'Microsoft YaHei, SimSun, 宋体, Arial Narrow';
+  height: 100%;
+}
+body,
+html {
+  -webkit-text-size-adjust: none;
+  width: 100%;
+  height: 100%;
+  color: #384569;
+}
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  /* Firefox */
+}
+img {
+  border: 0px;
+}
+ul,
+li,
+dl,
+dd,
+dt,
+p,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 100;
+  padding: 0;
+  margin: 0;
+}
+div,
+span {
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+}
+textarea {
+  resize: none;
+}
+/***禁用文本框推动改变大小***/
+a,
+input,
+button {
+  outline: none;
+}
+::-moz-focus-inner {
+  border: 0px;
+}
+select,
+input,
+img,
+select {
+  vertical-align: middle;
+}
+h1 {
+  font-weight: bold;
+  font-size: 20px;
+}
+/****默认链接样式*****/
+a:link {
+  color: #384569;
+  text-decoration: none;
+}
+a:visited {
+  color: #384569;
+  text-decoration: none;
+}
+a:hover {
+  color: #384569;
+  text-decoration: none;
+}
+a:active {
+  color: #384569;
+  text-decoration: none;
+}
+a {
+  color: #384569;
+}
+.active a {
+  color: white;
+}
+.active a:link,
+.active a:active,
+.active a:hover,
+.active a:active {
+  color: white;
+}
+/***字体样式***/
+.font-b {
+  font-weight: bold;
+}
+/****默认列表样式****/
+ul li {
+  height: 30px;
+  line-height: 30px;
+}
+/******边距模式******/
+.pad {
+  padding: 5px;
+}
+.pad-m {
+  padding: 10px;
+}
+.pad-l {
+  padding: 15px;
+}
+.pad-v {
+  padding: 5px 0;
+}
+.pad-h {
+  padding: 0 5px;
+}
+.pad-v-m {
+  padding: 10px 0;
+}
+.pad-h-m {
+  padding: 0 10px;
+}
+/******背景模式******/
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+/* word-break:break-all /*文字换行*/
+/*white-space:nowrap 文字不换行*/
+/*默认滚动条样式修改ie9 google Firefox 等高版本浏览器有效*/
+/*::selection {background: #D03333;color: white;text-shadow: none;}
+::-webkit-scrollbar-track-piece{width:10px;background-color:#f2f2f2}
+::-webkit-scrollbar{width:10px;height:6px}
+::-webkit-scrollbar-thumb{height:50px;background-color:rgba(0,0,0,.3);}
+::-webkit-scrollbar-thumb:hover{background:#cc0000}*/
+/*渐变*/
+/*background-image: -moz-linear-gradient(top, #8fa1ff, #3757fa);
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff4f02), color-stop(1, #8f2c00)); Saf4+, Chrome 
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endColorstr='#538300', GradientType='0'); IE*/

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>基本设置</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="body">
+        <div class="main-box">
+            <div class="page-nav">
+                <h1>邮箱配置</h1>
+                <div class="page-location">
+                    <span class="icon icon-home">&nbsp;</span>当前位置：系统设置 > <a href="#">基本设置</a><span class="icon icon-refresh mar-l" ></span>
+                </div>
+            </div>
+
+            <div class="wrapper-inner">
+                <form class="bor-lf">
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">邮件发送模式：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <label class="radio-inline">
+                                <input type="radio" name="mail_type" id="mail_type_1"  value="smtp" checked="checked" />
+                                <label for="mail_type_1"></label> 函数发送
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="mail_type" id="mail_type_2"  value="mail" />
+                                <label for="mail_type_2"></label> 模块发送
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">邮件服务器：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <input type="text" id="mail_server" placeholder="" value="smtp.qq.com" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">邮件发送端口：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <input type="text" id="mail_port" placeholder="" value="25" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">发件人地址：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <input type="text" id="sender_mail" value="mail@duguxiao.cn" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">发件人称呼</label>
+                        <div class="col-m-12 mar-l-m">
+                            <input type="text" id="sender_name" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">AuthLogin验证：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <label class="radio-inline">
+                                <input type="radio" name="isAuth" id="isAuth_1"  value="1" checked="checked" />
+                                <label for="isAuth_1"></label> 开启
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="isAuth" id="isAuth_2"  value="0" />
+                                <label for="isAuth_2"></label> 关闭
+                            </label>
+                        </div>
+                    </div> 
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">验证用户名：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <input type="text" id="master_email" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">验证密码：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <input type="password" id="master_email" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">设置邮件测试：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <input type="password" id="master_email" >
+                            <span class="tag active mar-l">
+                                立即测试
+                            </span>
+                        </div>
+                    </div>           
+                    <div class="form-group">
+                        <div class="col-m-offset-3" >
+                        <button class="button-default">提 交</button>
+                        </div>
+                    </div>                                      
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <!-- <div class="shade-box"></div>
+    <div class="msg-toast">
+        <div class="toast-icon icon icon-ok">
+            
+        </div>
+        <div class="toast-word">
+            加载中...
+        </div>
+    </div> -->
+    <script src="js/vue.js"></script>
+    <script>
+
+    </script>  
+</body>
+</html>

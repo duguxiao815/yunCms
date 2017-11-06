@@ -1,0 +1,70 @@
+@import 'pub.less';
+@import 'skin.less';
+body{
+    
+}
+.wrapper-inner{
+    padding-top:0; 
+    background: @bg_wrapper-in;
+}
+/******外边框******/
+.main-box{
+    .padding(0 10px 0 10px);
+    background: #ffffff;
+}
+.page-box{
+    .padding(10px 5px);
+    background: #ffffff;
+}
+form{
+    .form-group{
+        &:first-child{
+            .bor_top(2px, solid, @border_color_r);
+        }
+    }
+    .group-title{
+        .padding(0 0 0 15px);
+        height: @hei_ul;
+        line-height: @line_hei_li;
+        .font-b;
+        font-size: @font_size_m;
+        .bor_bottom(2px , solid , @border_color_r);
+        &:first-child{
+            .bor_top(2px, solid, @border_color_r);
+        }
+    }
+}
+.form-group{
+    height: @hei_ul;
+    &>label,&>div{
+        height: @hei_li !important;
+        line-height: @line_hei_li;
+        float: left;
+    }
+    &>label{
+        text-align: right !important;
+    }
+    &>div{
+        text-align: left !important;
+        label{
+            font-size: 14px;
+            input[type="radio"]{
+                line-height: 1.6rem;
+            }
+        }
+    }
+}
+.page-nav{
+    .padding(0 15px 0 0);
+    font-size: @font_size;
+    background: @bg_wrapper-in;
+    height: 45px;
+    line-height: 30px;
+    h1{ font-size: @font_size_xl;  display: inline-block;}       //页面标题
+    .page-location{
+        .fr();
+        .icon{
+            .pointer;
+        }
+    }
+}

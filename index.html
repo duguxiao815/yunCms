@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>内容管理系统</title>
+    <link rel="stylesheet" href="css/pub.css">
+    <link rel="stylesheet" href="css/skin.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="main-header-bg">
+            <div id="logo"></div>
+            <div id="middle-head">
+                <div id="btn-left-nav" class="icon-mid-hei icon-mid-dot" title="菜单隐藏">
+                    <span class="icon icon-left-nav"></span>
+                </div>
+                <nav class="head-nav">
+                    <a href="system.html" target="main">系统设置</a>
+                    <a href="#">内容管理</a>
+                    <a href="#">模块插件</a>
+                    <a href="#">用户权限</a>
+                    <a href="#">应用中心</a>
+                </nav>
+            </div>
+            <div id="right-head">
+                <div id="btn-exit" class="icon-mid-hei icon-mid-dot" title="注销">
+                    <span class="icon icon-exit"></span>
+                </div>
+                <div id="btn-full" class="icon-mid-hei icon-mid-dot" title="全屏">
+                    <span class="icon icon-full"></span>
+                </div>
+                <!-- <div id="btn-lock" class="icon-mid-hei icon-mid-dot" title="锁定屏幕">
+                    <span class="icon icon-lock"></span>
+                </div> -->
+                <div id="btn-face" class="icon-mid-hei icon-mid-btn btn-group btn-group-no">
+                    <div class="btn btn-no">
+                        <span class="icon-caret-down icon icon-last" id="icon-caret-down"></span>
+                    </div>
+                    <div class="btn btn-no btn-wid-m">
+                        <span class="icon icon-face" id="icon-face"></span>独孤中秋小小
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <span class="icon icon-info"></span>
+                            <a href="#">我的资料</a>
+                            <span class="corner">6</span>
+                        </li>
+                        <li>
+                            <span class="icon icon-setup"></span>
+                            <a href="#">个人设置</a>
+                        </li>
+                        <li>
+                            <span class="icon icon-skin"></span>
+                            <a href="#">主题&皮肤</a>
+                        </li>
+                        <li>
+                            <span class="icon icon-lock"></span>
+                            <a href="#">修改密码</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="line-hei-m">
+                </div>
+                <div class="icon-mid-hei icon-mid-dot" title="信息">
+                    <span class="icon icon-msg"></span>
+                    <span class="corner icon-corner">9</span>
+                </div>
+                <div class="icon-mid-hei icon-mid-dot" title="提醒">
+                    <span class="icon icon-bell"></span>
+                    <span class="corner icon-corner">1</span>
+                </div>
+                <!-- <div class="icon-mid-hei icon-mid-dot" title="信息">
+                    <span class="icon icon-msg"></span>
+                    <span class="corner icon-corner">9</span>
+                </div> -->
+            </div>
+        </header>
+
+        <div class="body">
+            <div class="left-box">
+                <div class="left-nav-box">
+                    <ul class="left-nav">
+                        <li>
+                            <div class="nav-title on">
+                                <span class="icon icon-setup"></span>
+                                <a class="title" href="javascript:void(0);">系统设置</a>
+                                <span class="icon-caret-down icon fr"></span>
+                                <div class="front-line">&nbsp;</div>
+                            </div>
+                            <nav class="sec-nav">    
+                                <a href="system/system.html" target="main">站点信息</a>
+                                <a href="system/base.html" target="main">基本设置</a>
+                                <a href="system/safe.html" target="main">安全配置</a>
+                                <a href="system/upset.html" target="main">附件配置</a>
+                                <a href="system/email.html" target="main">邮箱配置</a>
+                                <a href="system/content.html" target="main">互联账号</a>
+                            </nav>
+                        </li>
+                        <li>
+                            <div class="nav-title on">                          
+                                <span class="icon icon-admin"></span>
+                                <a class="title" href="#">管理员设置</a>
+                                <span class="icon-caret-down icon fr"></span>
+                                <div class="front-line">&nbsp;</div>
+                            </div>
+                            <nav class="sec-nav">    
+                                <a href="#">管理员管理</a>
+                                <a href="#">角色管理</a>
+                                <a href="#">数据备份</a>
+                            </nav>
+                        </li>
+                        <li>
+                            <div class="nav-title on">
+                                <span class="icon icon-data"></span>
+                                <a class="title" href="#">数据工具</a>
+                                <span class="icon-caret-down icon fr"></span>
+                            </div>
+                            <nav class="sec-nav">    
+                                <a href="#">备份数据</a>
+                                <a href="#">恢复数据</a>
+                                <a href="#">SQL查询</a>
+                            </nav>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <main class="main-box">
+                <div class="main-frame">
+                    <iframe src="main.html" frameborder = "0" width="100%" height="100%" name="main" id="main" ></iframe>
+                </div>        
+            </main>
+        </div>
+
+    </div>
+
+</body>
+</html>

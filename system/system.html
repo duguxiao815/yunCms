@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>系统设置</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="body">
+        <div class="main-box">
+            <div class="page-nav">
+                <h1>站点信息</h1>
+                <div class="page-location">
+                    <span class="icon icon-home">&nbsp;</span>当前位置：用户权限 > <a href="#">会员管理</a><span class="icon icon-refresh mar-l icon-rotate" ></span>
+                </div>
+            </div>
+
+            <div class="wrapper-inner">
+                <div class="bor-lf">
+                    <form>
+                        <div class="form-group">
+                            <label for="webname" class="col-m-3">网站名称：</label>
+                            <div class="col-m-12 mar-l-m">
+                                <input type="text" id="web_name" placeholder="用户名" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="webname" class="col-m-3">网站URL：</label>
+                            <div class="col-m-12 mar-l-m">
+                                <input type="text" id="web_url" placeholder="网址" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="webname" class="col-m-3">网站基本路径：</label>
+                            <div class="col-m-16 mar-l-m">
+                                <input type="text" id="web_path" placeholder="网址基本路径" >
+                                <span class="tag">不带http://,不带www,只填写最后面一部分如：baidu.com,或留空。填写错误将无法登录</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="webname" class="col-m-3">网站Logo：</label>
+                            <div class="col-m-12 mar-l-m">
+                                /static/images/ &nbsp;
+                                <input type="text" id="web_logo" class="inp-wid-s" >
+                                <span class="tag active mar-l">
+                                    <span class="icon icon-upimg"></span>上传图片
+                                    <div class="mask"></div>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="webname" class="col-m-3">SEO_关键词：</label>
+                            <div class="col-m-12 mar-l-m">
+                                <input type="text" id="seo_key" name="seo_key" placeholder="关键词" >
+                            </div>
+                        </div>
+                        <div class="form-group form-hei-l">
+                            <label for="webname" class="col-m-3">SEO_描述：</label>
+                            <div class="col-m-12 mar-l-m">
+                                <textarea type="text" id="seo_description" name="seo_description" placeholder="描述" ></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="webname" class="col-m-3">管理员电话：</label>
+                            <div class="col-m-12 mar-l-m">
+                                <input type="text" id="master_phone" >
+                            </div>
+                        </div> 
+                        <div class="form-group">
+                            <label for="webname" class="col-m-3">管理员邮箱：</label>
+                            <div class="col-m-12 mar-l-m">
+                                <input type="text" id="master_email" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="webname" class="col-m-3">缓存时间：</label>
+                            <div class="col-m-12 mar-l-m">
+                                <input type="text" id="web_memcache" >
+                            </div>
+                        </div>                    
+                        <div class="form-group">
+                            <label for="webname" class="col-m-3">版权信息：</label>
+                            <div class="col-m-12 mar-l-m">
+                                <input type="text" id="web_copyriht" >
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="webname" class="col-m-3">网站开关：</label>
+                            <div class="col-m-12 mar-l-m">
+                                <label class="radio-inline">
+                                    <input type="radio" id="web_is_close_1" name="web_is_close" value="0" checked="checked" />
+                                    <label for="web_is_close_1"></label> 开启
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" id="web_is_close_2" name="web_is_close" value="0" />
+                                    <label for="web_is_close_2"></label> 关闭
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group form-hei-l">
+                            <label for="webname" class="col-m-3">关闭原因：</label>
+                            <div class="col-m-12 mar-l-m">
+                                <textarea name="close_reason" id="close_reason"></textarea>
+                            </div>
+                        </div>                  
+                        <div class="form-group">
+                            <div class="col-m-offset-3" >
+                            <button class="button-default">提 交</button>
+                            </div>
+                        </div>                                      
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="shade-box">
+        <div class="ShadeTitle">
+            <div></div>
+            <div class="button_close">
+                <span class="icon icon-close"></span>
+            </div>
+        </div>
+    </div> -->
+    <script src="../js/vue.js"></script>
+    <script>
+
+    </script>  
+</body>
+</html>

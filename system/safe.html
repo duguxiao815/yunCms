@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>基本设置</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <div class="body">
+        <div class="main-box">
+            <div class="page-nav">
+                <h1>安全配置</h1>
+                <div class="page-location">
+                    <span class="icon icon-home">&nbsp;</span>当前位置：系统设置 > <a href="#">安全配置</a><span class="icon icon-refresh mar-l" ></span>
+                </div>
+            </div>
+
+            <div class="wrapper-inner">
+                <form class="bor-lf">
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">启用后台日志：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <label class="radio-inline">
+                                <input type="radio" name="log_is_open" id="log_is_open_1"  value="1" checked="checked" />
+                                <label for="log_is_open_1"></label> 开启
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="log_is_open" id="log_is_open_2"  value="0" />
+                                <label for="log_is_open_2"></label> 关闭
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">允许登录失败次数：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <input type="text" id="web_url" class="inp-wid-s" placeholder="" >
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">后台访问IP验证：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <label class="radio-inline">
+                                <input type="radio" name="admin_loginip_is_open" id="admin_loginip_is_open_1"  value="1" checked="checked" />
+                                <label for="admin_loginip_is_open_1"></label> 开启
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="admin_loginip_is_open" id="admin_loginip_is_open_2"  value="0" />
+                                <label for="admin_loginip_is_open_2"></label> 关闭
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group form-hei-l">
+                        <label for="webname" class="col-m-3">后台允许访问IP：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <textarea name="admin_ip" id="admin_ip"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">访问来源验证：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <div class="select" id="visit_check">
+                                <p>不开启验证</p>
+                                <ul>
+                                    <li data-value="0" class="selected">不开启验证</li>
+                                    <li data-value="1">仅后台验证</li>
+                                    <li data-value="2">仅前台验证</li>
+                                    <li data-value="3">都验证</li>
+                                </ul>
+                                <input type="hidden" name="visit_check" value="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="webname" class="col-m-3">网站基本路径：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <input type="text" id="web_path" placeholder="网址基本路径" >
+                        </div>
+                    </div>
+                    <div class="group-title">
+                        防火墙
+                    </div>
+                    <div class="form-group form-hei-l">
+                        <label for="webname" class="col-m-3">允许访问IP：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <textarea name="allow_ip" id="allow_ip" class="inp-wid-l"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group form-hei-l">
+                        <label for="webname" class="col-m-3">禁止访问IP：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <textarea name="deny_ip" id="deny_ip" class="inp-wid-l"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group form-hei-l">
+                        <label for="webname" class="col-m-3">屏蔽关键字：</label>
+                        <div class="col-m-12 mar-l-m">
+                            <textarea name="danger_key" id="danger_key" class="inp-wid-l"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-m-offset-3" >
+                        <button class="button-default">提 交</button>
+                        </div>
+                    </div>                                      
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/vue.js"></script>
+    <script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#visit_check').children('p').on('click',function(e){
+				$(this).parent().toggleClass('open');
+				e.stopPropagation();
+			});
+            $('#visit_check ul li').on('click', function(e){
+				var _this_ = $(this);
+                var _parent_ = $(this).parent().parent();
+				_parent_.children("p").text(_this_.text());
+                _parent_.children("input[type='hidden']").val(_this_.data('value'));
+				_this_.addClass('selected').siblings().removeClass('selected');
+				_parent_.removeClass('open');
+				e.stopPropagation();
+			});
+			
+			$(document).on('click', function(){
+				$('.select').removeClass('open');
+			});
+		});
+    </script> 
+</body>
+</html>
