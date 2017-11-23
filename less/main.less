@@ -6,6 +6,11 @@ body{
 .wrapper-inner{
     padding-top:0; 
     background: @bg_wrapper-in;
+    .row{
+        &>div:first-child{
+            .text-center;
+        }
+    }
 }
 /******外边框******/
 .main-box{
@@ -45,12 +50,50 @@ form{
         text-align: right !important;
     }
     &>div{
-        text-align: left !important;
         label{
             font-size: 14px;
             input[type="radio"]{
                 line-height: 1.6rem;
             }
+        }
+    }
+    &.hei-l{
+        height: @hei_ul ;
+        &>div{
+            height: @hei_li ;
+            line-height: @hei_li; 
+        }
+    }
+    &.hei-xl{
+        height: @hei_ul*1.6 ;
+        &>div{
+            height: @hei_li*1.6 ;
+            line-height: @hei_li*1.6; 
+        }
+    }
+    &.auto-hei2{
+        height: 54px;
+        margin-bottom: 12px;
+        &>label{
+            display: block;
+            height: 18px !important; 
+            line-height: 16px !important;
+            text-align: left !important;
+            padding: 0 !important;
+            float: none;
+        }
+        &>div{
+            padding: 0 !important;
+            height: 36px ; 
+            line-height:36px;
+        }
+    }
+    &.auto-hei-nopad{
+        height: @hei_ul_min !important;
+        &>div{
+            height: @hei_li_min*0.8 !important;
+            line-height: @hei_li_min*0.8 !important;
+            float: left;
         }
     }
 }
@@ -67,4 +110,60 @@ form{
             .pointer;
         }
     }
+}
+
+/*****登录页面******/
+.wrapper-login{
+    overflow: hidden;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 100%;
+}
+.login-box{
+    width: 360px;
+    .login-message{
+        height: 44px;
+        line-height: 24px;
+        background: #ffffff;
+        margin-bottom: 20px;
+        padding: 10px 15px;
+        &.message-error{
+            border-left: 4px solid @color_danger;
+            color: @color_danger;
+        } 
+        &.message-success{
+            border-left: 4px solid @color_success;
+            color: @color_success;
+        }
+        &.message-info{
+            border-left: 4px solid @color_info;
+            color: @color_info; 
+        } 
+    }
+}
+
+.login-header{
+    height: 70px;
+    margin-bottom: 20px;
+    &:empty{
+        
+    }
+    &.login_logo{
+        background : url('../image/logo_login.png')  no-repeat center center;
+        background-size : 45%;
+    }
+}
+.login-message{
+    height: 44px;
+    line-height: 24px;
+    background: #ffffff;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.login-main{
+    padding: 10px 25px 0px 25px;
+    background: #ffffff;
 }

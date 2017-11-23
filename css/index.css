@@ -67,6 +67,10 @@ h1 {
   font-weight: bold;
   font-size: 20px;
 }
+[type='checkbox'] {
+  vertical-align: middle;
+  margin-top: -2px;
+}
 /****默认链接样式*****/
 a:link {
   color: #384569;
@@ -95,6 +99,16 @@ a {
 .active a:hover,
 .active a:active {
   color: white;
+}
+/***对齐方式***/
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.text-center {
+  text-align: center !important;
 }
 /***字体样式***/
 .font-b {
@@ -149,8 +163,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
 /****** 加载Iconfont 图标字体 ******/
 @font-face {
   font-family: 'iconfont';
-  src: url('//at.alicdn.com/t/font_416730_dt85q29hdwm3rf6r.eot');
-  src: url('//at.alicdn.com/t/font_416730_dt85q29hdwm3rf6r.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_416730_dt85q29hdwm3rf6r.woff') format('woff'), url('//at.alicdn.com/t/font_416730_dt85q29hdwm3rf6r.ttf') format('truetype'), url('//at.alicdn.com/t/font_416730_dt85q29hdwm3rf6r.svg#iconfont') format('svg');
+  src: url('//at.alicdn.com/t/font_416730_6bxp32h533m1jor.eot');
+  src: url('//at.alicdn.com/t/font_416730_6bxp32h533m1jor.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_416730_6bxp32h533m1jor.woff') format('woff'), url('//at.alicdn.com/t/font_416730_6bxp32h533m1jor.ttf') format('truetype'), url('//at.alicdn.com/t/font_416730_6bxp32h533m1jor.svg#iconfont') format('svg');
   
   /* project id 416730 */
 }
@@ -197,6 +211,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   overflow-x: visible;
   overflow-y: visible;
   white-space: nowrap;
+}
+.no-bor {
+  border: 0 !important;
 }
 .mask {
   background: rgba(0, 0, 0, 0.1);
@@ -283,8 +300,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
 .form-group,
 .header {
   background: #ffffff;
-  height: 2.6rem;
-  line-height: 2.6rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
   border-bottom: 1px solid #dee3ef;
 }
 .row .col-m-1,
@@ -293,7 +310,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   width: calc(5%);
   float: left;
   height: inherit;
-  text-align: center;
+  text-align: left;
   text-overflow: ellipsis;
   overflow-x: visible;
   overflow-y: visible;
@@ -305,7 +322,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   width: calc(10%);
   float: left;
   height: inherit;
-  text-align: center;
+  text-align: left;
   text-overflow: ellipsis;
   overflow-x: visible;
   overflow-y: visible;
@@ -317,7 +334,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   width: calc(15%);
   float: left;
   height: inherit;
-  text-align: center;
+  text-align: left;
   text-overflow: ellipsis;
   overflow-x: visible;
   overflow-y: visible;
@@ -329,7 +346,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   width: calc(20%);
   float: left;
   height: inherit;
-  text-align: center;
+  text-align: left;
   text-overflow: ellipsis;
   overflow-x: visible;
   overflow-y: visible;
@@ -341,7 +358,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   width: calc(25%);
   float: left;
   height: inherit;
-  text-align: center;
+  text-align: left;
   text-overflow: ellipsis;
   overflow-x: visible;
   overflow-y: visible;
@@ -353,7 +370,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   width: calc(30%);
   float: left;
   height: inherit;
-  text-align: center;
+  text-align: left;
   text-overflow: ellipsis;
   overflow-x: visible;
   overflow-y: visible;
@@ -365,7 +382,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   width: calc(35%);
   float: left;
   height: inherit;
-  text-align: center;
+  text-align: left;
   text-overflow: ellipsis;
   overflow-x: visible;
   overflow-y: visible;
@@ -377,7 +394,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   width: calc(40%);
   float: left;
   height: inherit;
-  text-align: center;
+  text-align: left;
   text-overflow: ellipsis;
   overflow-x: visible;
   overflow-y: visible;
@@ -389,7 +406,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   width: calc(45%);
   float: left;
   height: inherit;
-  text-align: center;
+  text-align: left;
   text-overflow: ellipsis;
   overflow-x: visible;
   overflow-y: visible;
@@ -401,7 +418,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   width: calc(50%);
   float: left;
   height: inherit;
-  text-align: center;
+  text-align: left;
   text-overflow: ellipsis;
   overflow-x: visible;
   overflow-y: visible;
@@ -413,7 +430,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   width: calc(55%);
   float: left;
   height: inherit;
-  text-align: center;
+  text-align: left;
   text-overflow: ellipsis;
   overflow-x: visible;
   overflow-y: visible;
@@ -425,7 +442,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   width: calc(60%);
   float: left;
   height: inherit;
-  text-align: center;
+  text-align: left;
   text-overflow: ellipsis;
   overflow-x: visible;
   overflow-y: visible;
@@ -437,7 +454,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   width: calc(65%);
   float: left;
   height: inherit;
-  text-align: center;
+  text-align: left;
   text-overflow: ellipsis;
   overflow-x: visible;
   overflow-y: visible;
@@ -449,7 +466,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   width: calc(70%);
   float: left;
   height: inherit;
-  text-align: center;
+  text-align: left;
   text-overflow: ellipsis;
   overflow-x: visible;
   overflow-y: visible;
@@ -461,7 +478,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   width: calc(75%);
   float: left;
   height: inherit;
-  text-align: center;
+  text-align: left;
   text-overflow: ellipsis;
   overflow-x: visible;
   overflow-y: visible;
@@ -473,7 +490,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   width: calc(80%);
   float: left;
   height: inherit;
-  text-align: center;
+  text-align: left;
   text-overflow: ellipsis;
   overflow-x: visible;
   overflow-y: visible;
@@ -485,7 +502,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   width: calc(85%);
   float: left;
   height: inherit;
-  text-align: center;
+  text-align: left;
   text-overflow: ellipsis;
   overflow-x: visible;
   overflow-y: visible;
@@ -497,7 +514,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   width: calc(90%);
   float: left;
   height: inherit;
-  text-align: center;
+  text-align: left;
   text-overflow: ellipsis;
   overflow-x: visible;
   overflow-y: visible;
@@ -509,7 +526,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   width: calc(95%);
   float: left;
   height: inherit;
-  text-align: center;
+  text-align: left;
   text-overflow: ellipsis;
   overflow-x: visible;
   overflow-y: visible;
@@ -521,7 +538,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   width: calc(100%);
   float: left;
   height: inherit;
-  text-align: center;
+  text-align: left;
   text-overflow: ellipsis;
   overflow-x: visible;
   overflow-y: visible;
@@ -552,7 +569,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
 .form-group .tag,
 .header .tag {
   margin-top: -0.1rem;
-  height: calc(100% - 1.1rem);
+  height: 1.4rem ;
   line-height: 0.8rem;
   border-radius: 5px;
   cursor: pointer;
@@ -568,7 +585,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
   line-height: 0.6rem;
   font-size: 14px;
   margin-left: -0.2rem;
-  margin-right: 0.2rem;
+  margin-right: 0.5rem;
 }
 .row .tag:hover .mask,
 .form-group .tag:hover .mask,
@@ -595,6 +612,27 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c6ff00', endC
 .header.form-hei-l {
   padding: 7px 0;
   height: 80px !important;
+}
+.row.row-hei-l,
+.form-group.row-hei-l,
+.header.row-hei-l {
+  height: 3.75rem;
+}
+.row.row-hei-l > div,
+.form-group.row-hei-l > div,
+.header.row-hei-l > div {
+  height: 3.5rem;
+  line-height: 3.5rem;
+}
+.row.row-hei-l > div img,
+.form-group.row-hei-l > div img,
+.header.row-hei-l > div img {
+  height: calc(74%);
+}
+.row.row-hei-l .tag,
+.form-group.row-hei-l .tag,
+.header.row-hei-l .tag {
+  margin-top: -0.1rem;
 }
 .row:hover {
   background: #f6f6f6;
@@ -691,6 +729,18 @@ button:hover {
 .btn-no {
   border-width: 0;
 }
+.btn-norad {
+  border-radius: 0 !important;
+}
+.btn-hei-l {
+  line-height: 38px !important;
+  height: 38px !important;
+  font-size: 16px;
+}
+.btn-hui {
+  background: #f6f6f6;
+  box-shadow: 1px 1px 5px #ddd inset;
+}
 /*+----按钮组(btn-group)----+*/
 .btn-group {
   position: relative;
@@ -772,11 +822,15 @@ button:hover {
   font-size: 22px;
   vertical-align: middle ;
   text-align: center;
+  display: inline-block;
   font-family: "iconfont" !important;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
+}
+.icon.icon-hei-m {
+  font-size: 26px;
 }
 /* .icon:hover{ background: rgba(0, 0, 0, 0.2); } */
 /******标签（tag）*****/
@@ -843,6 +897,16 @@ button:hover {
 .message-box .header .message-title {
   padding-left: 15px;
   font-size: 16px;
+}
+.message-box .header .message-button .icon {
+  float: right;
+  height: inherit;
+  line-height: 44px;
+  margin-right: 10px !important;
+}
+.message-box .header .message-button .icon:hover {
+  background: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 /**吐司**/
 .msg-toast {
@@ -1077,6 +1141,18 @@ nav .pagination > li.active:hover {
 .icon-ok::before {
   content: '\e63d';
 }
+.icon-qq::before {
+  content: '\e606';
+}
+.icon-wechat::before {
+  content: '\e613';
+}
+.icon-weibo::before {
+  content: '\e608';
+}
+.icon-baidu::before {
+  content: '\e67f';
+}
 /**图片特效**/
 .icon-rotate {
   transform: rotate(9deg);
@@ -1124,11 +1200,14 @@ input[type='text'],
 textarea[type='text'] {
   width: 320px;
 }
-/**单选按钮**/
-.radio-inline {
+.radio-inline,
+.checkbox-inline {
   display: inline-block;
   height: 20px;
   line-height: 20px ;
+}
+/**单选按钮**/
+.radio-inline {
   margin-right: 15px !important;
 }
 .radio-inline [type='radio'] {
@@ -1168,6 +1247,49 @@ textarea[type='text'] {
   left: 4px;
   transform: scale(0);
   transition: transform 0.2s ease-in;
+}
+/**多选按钮**/
+.checkbox-inline [type='checkbox'] {
+  display: none;
+}
+.checkbox-inline [type='checkbox']:checked + label:after {
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.2s ease-in;
+}
+.checkbox-inline label {
+  display: inline-block;
+  top: 3px;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  border: 1px solid #3e81c4;
+  border-radius: 5px;
+  padding: 8px;
+  margin-right: 10px;
+  position: relative;
+  background: #ffffff;
+  color: #333;
+  overflow: hidden;
+  cursor: pointer;
+}
+.checkbox-inline label::after {
+  content: '√';
+  font-family: 'SimSun' !important;
+  color: white;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  background-color: #3e81c4;
+  display: block;
+  font-size: 12px;
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  text-align: center;
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.2s ease-out;
 }
 /**下拉列表**/
 .select {

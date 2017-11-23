@@ -30,11 +30,15 @@
 @color_info     : #5BC0DE;
 @color_default  : #337AB7;
 @color_inp      : #888888;
+@color_success  : #468C00;
 
 @hei_ul         : 2.76rem;
-@hei_li         : 2.6rem;
-@line_hei_li    : 2.6rem;
+@hei_li         : 2.5rem;
+@line_hei_li    : 2.5rem;
 @hei_input      : 1.8rem;
+@hei_ul_min     : 2rem;
+@hei_li_min     : 1.8rem;
+@line_hei_li_min: 1.7rem;
 
 @wid_msg_box    : 480px;
 @hei_msg_box    : 320px;
@@ -54,7 +58,10 @@ a,input,button{ outline:none; }
 ::-moz-focus-inner{border:0px;}
 select,input,img,select{vertical-align:middle;}
 h1{ font-weight: bold; font-size: @font_size_xxl;}
-
+[type='checkbox']{
+    vertical-align:middle;
+    margin-top:-2px;
+}
 /****默认链接样式*****/
 a:link {color:@text_color; text-decoration:none;} 
 a:visited {color: @text_color; text-decoration:none;} 
@@ -69,6 +76,10 @@ a{color: @text_color;}
         }
     }
 }
+/***对齐方式***/
+.text-left{ text-align: left !important;}
+.text-right{ text-align: right !important;}
+.text-center{ text-align: center !important;}
 
 /***字体样式***/
 .font-b{ font-weight: bold; }

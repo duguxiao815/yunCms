@@ -67,6 +67,10 @@ h1 {
   font-weight: bold;
   font-size: 20px;
 }
+[type='checkbox'] {
+  vertical-align: middle;
+  margin-top: -2px;
+}
 /****默认链接样式*****/
 a:link {
   color: #384569;
@@ -95,6 +99,16 @@ a {
 .active a:hover,
 .active a:active {
   color: white;
+}
+/***对齐方式***/
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+.text-center {
+  text-align: center !important;
 }
 /***字体样式***/
 .font-b {

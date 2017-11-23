@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>内容管理系统</title>
-    <link rel="stylesheet" href="css/pub.css">
-    <link rel="stylesheet" href="css/skin.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -17,12 +15,10 @@
                 <div id="btn-left-nav" class="icon-mid-hei icon-mid-dot" title="菜单隐藏">
                     <span class="icon icon-left-nav"></span>
                 </div>
-                <nav class="head-nav">
-                    <a href="system.html" target="main">系统设置</a>
-                    <a href="#">内容管理</a>
-                    <a href="#">模块插件</a>
-                    <a href="#">用户权限</a>
-                    <a href="#">应用中心</a>
+                <nav class="head-nav" id="head-nav">
+                    <template  v-for="item in nav">
+                        <a :href="item.url" target="main">{{ item.title }}</a>
+                    </template>
                 </nav>
             </div>
             <div id="right-head">
@@ -96,7 +92,7 @@
                                 <a href="system/safe.html" target="main">安全配置</a>
                                 <a href="system/upset.html" target="main">附件配置</a>
                                 <a href="system/email.html" target="main">邮箱配置</a>
-                                <a href="system/content.html" target="main">互联账号</a>
+                                <a href="system/contact.html" target="main">互联账号</a>
                             </nav>
                         </li>
                         <li>
@@ -107,9 +103,9 @@
                                 <div class="front-line">&nbsp;</div>
                             </div>
                             <nav class="sec-nav">    
-                                <a href="#">管理员管理</a>
-                                <a href="#">角色管理</a>
-                                <a href="#">数据备份</a>
+                                <a href="system/admin.html" target="main">管理员管理</a>
+                                <a href="system/admingroup.html" target="main">管理员分组</a>
+                                <a href="system/authorize.html" target="main">权限管理</a>
                             </nav>
                         </li>
                         <li>
@@ -133,8 +129,38 @@
                 </div>        
             </main>
         </div>
-
     </div>
-
+    <script src="js/vue.js"></script>
+    <script>
+        var app = new Vue(
+            {
+                "el" : '#head-nav',
+                "data" :{
+                    "nav" : [
+                        {
+                            "title" : "系统设置",
+                            "url" : 'system/system.html'
+                        },
+                        {
+                            "title" : "内容管理",
+                            "url" : 'system/system.html'
+                        },
+                        {
+                            "title" : "模块插件",
+                            "url" : 'system/system.html'
+                        },
+                        {
+                            "title" : "用户权限",
+                            "url" : 'users/member.html'
+                        },
+                        {
+                            "title" : "商城系统",
+                            "url" : 'system/system.html'
+                        }
+                    ]
+                }
+            }
+        );
+    </script>
 </body>
 </html>

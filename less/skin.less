@@ -48,6 +48,10 @@
 .icon-upimg::before  { content: '\e62d';}
 .icon-close::before { content: '\e619';}
 .icon-ok::before { content: '\e63d';}
+.icon-qq::before { content: '\e606';}
+.icon-wechat::before { content: '\e613';}
+.icon-weibo::before { content: '\e608';}
+.icon-baidu::before { content: '\e67f';}
 
 /**图片特效**/
 .icon-rotate{
@@ -89,11 +93,13 @@ input, textarea{
     }
 }
 
-/**单选按钮**/
-.radio-inline{
+.radio-inline,.checkbox-inline{
     display : inline-block;
     height: 20px;
     line-height: 20px ;
+}
+/**单选按钮**/
+.radio-inline{
     .mar-r-m();
     [type='radio']{
         display : none;
@@ -129,6 +135,49 @@ input, textarea{
         }
     }
 } 
+
+/**多选按钮**/
+.checkbox-inline{
+    [type='checkbox']{
+        display: none;
+        &:checked + label:after{
+            transform: scale(1);
+            opacity: 1;
+            transition: all .2s ease-in;
+        }
+    }
+    label{
+        display: inline-block;
+        top: 3px;
+        .square(18px);
+        .bor(@third_color);
+        .bor_rad(5px);
+        padding: 8px;
+        margin-right: 10px;
+        position: relative;
+        background: #ffffff;
+        color: #333;
+        overflow: hidden;
+        cursor: pointer;
+        &::after{
+            content: '√';
+            font-family: 'SimSun' !important;
+            color: white;
+            .square(20px);
+            background-color: @third_color;
+            display: block;
+            font-size: @font_size_s;
+            position: absolute;
+            left: -2px;
+            top: -2px;
+            text-align: center;
+            transform: scale(0);
+            opacity: 0;
+            transition: all .2s ease-out;
+        }
+    }
+}
+
 /**下拉列表**/
 .select{
     height: 26px;
